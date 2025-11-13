@@ -1,0 +1,17 @@
+{
+  "extends": "gts/tsconfig-google.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "build",
+    "allowSyntheticDefaultImports": false,
+  },
+  "include": [
+    "src/*.ts",
+    "src/**/*.ts",
+    "test/*.ts",
+    "test/**/*.ts"
+  ],
+  "exclude": [
+    "test/fixtures"
+  ]
+}

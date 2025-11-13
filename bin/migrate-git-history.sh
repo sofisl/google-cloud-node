@@ -135,12 +135,12 @@ fi
 
 git push -u origin "${BRANCH}" --force
 
-# create pull request
-if gh --help > /dev/null
-then
-  gh pr create --title "migrate code from ${SOURCE_REPO}"
-else
-  hub pull-request -m "migrate code from ${SOURCE_REPO}"
-fi
+# # create pull request
+# if gh --help > /dev/null
+# then
+#   gh pr create --title "migrate code from ${SOURCE_REPO}"
+# else
+#   hub pull-request -m "migrate code from ${SOURCE_REPO}"
+# fi
 
 popd
